@@ -4,13 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>South Park</title>
-    <h1>South Park Character:</h1>
   </head>
   <body>
-    <div id="Character">
-     <!-- <p> Name: <span id="name"></span></p>
+    <header>
+      <h1>South Park Characters</h1>
+    </header>
+
+    <main>
+      <section id="characters" class="grid-container"></section>
+    </main>
+
+    <!-- <p>Tolkien Black</p>
+    <p>Student</p>
+    <img src="svg/Token_Black2.png" /> -->
+
+    <dialog id="dialog">
+      <section class="dialog_grid">
+        <figure><img id="dialog_image" src="svg/Token_Black2.png" style="width: 30%" /></figure>
+        <article>
+          <h2 id="dialog_title"></h2>
+          <h3 id="dialog_age"></h3>
+          <p id="dialog_occupation"></p>
+          <section>
+            <h4>Description:</h4>
+            <ul>
+              <li><strong>Gender:</strong><span id="dialog_gender"></span></li>
+              <li><strong>Religion:</strong><span id="dialog_religion"></span></li>
+              <li><strong>Catch Phrase:</strong> <span id="dialog_catchPhrase"></span></li>
+              <li><strong>Hair Color:</strong> <span id="dialog_hairColor"></span></li>
+              <li><strong>School Grade:</strong> <span id="dialog_schoolGrade"></span></li>
+              <li><strong>Episodes:</strong> <span id="dialog_episodes"></span></li>
+              <li><strong>Appereances:</strong> <span id="dialog_appereances"></span></li>
+              <li><strong>First Appereance:</strong> <span id="dialog_firstAppereance"></span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Voiced By:</h4>
+            <p><span id="dialog_name">Character</span> is voiced by: <span id="dialog_voicedBy"></span></p>
+          </section>
+        </article>
+      </section>
+
+      <form method="dialog">
+        <button id="btn_close">CLOSE</button>
+      </form>
+    </dialog>
+
+    <footer>
+      <p>MADE BY ABDI</p>
+    </footer>
+
+    <!-- <p> Name: <span id="name"></span></p>
       <p> Nickname: <span id="nickname"></span></p>
       <p> Image: <span id="image"></span></p>
     <p> Occupation: <span id="occupation"></span></p>
@@ -23,8 +70,7 @@
       <p> Episodes: <span id="episodes"></span></p>
       <p> Appereances: <span id="appereances"></span></p>
       <p> First Appereance:<span id="firstAppereance"></span></p> -->
-    <ul id="characters"></ul>
-
+    <!-- <ul id="characters"></ul> -->
     <script src="app.js"></script>
   </body>
 </html>
