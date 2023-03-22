@@ -55,6 +55,7 @@ function showDialog(characters) {
   document.querySelector("#dialog_occupation").textContent = characters.occupation;
 
   //Rest
+  document.querySelector("#dialog_nickname").textContent = characters.nickname;
   document.querySelector("#dialog_gender").textContent = characters.gender;
   document.querySelector("#dialog_religion").textContent = characters.religion;
   document.querySelector("#dialog_catchPhrase").textContent = characters.catchPhrase;
