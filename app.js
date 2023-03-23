@@ -65,8 +65,8 @@ function showDialog(characters) {
   document.querySelector("#dialog_hairColor").textContent = characters.hairColor;
   document.querySelector("#dialog_schoolGrade").textContent = characters.schoolGrade;
   document.querySelector("#dialog_episodes").textContent = characters.episodes;
-  document.querySelector("#dialog_appereances").textContent = characters.appereances;
-  document.querySelector("#dialog_firstAppereance").textContent = characters.firstAppereance;
+  document.querySelector("#dialog_appearances").textContent = characters.appereances;
+  document.querySelector("#dialog_firstAppearances").textContent = characters.firstAppereance;
 
   document.querySelector("#dialog_name").textContent = characters.name;
   document.querySelector("#dialog_voicedBy").textContent = characters.voicedBy;
