@@ -22,7 +22,7 @@ window.addEventListener("load", start);
 async function start() {
   console.log("South Park is running!");
 
-  const tolkienBlack = await getCharacter("Data/southPark.json");
+  const tolkienBlack = await getCharacter("https://raw.githubusercontent.com/Abdiox/South-park1/main/Data/southPark.json");
   showCharacter(tolkienBlack);
 }
 
