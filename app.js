@@ -2,30 +2,27 @@
 
 window.addEventListener("load", start);
 
-const tolkienBlack = {
-  name: "Tolkien Black",
-  nickname: "Tupperware " + "," + " Tupper Mech MK III " + "," + " Blackie " + "," + " Congo ",
-  image: "svg/Token_Black2.png",
-  occupation: "Student",
-  age: "10 years old",
-  voicedBy: "Trey Parker" + "," + " Adrien Beard",
-  gender: "Male",
-  religion: "Roman Catholic",
-  catchPhrase: "null",
-  hairColor: "Black",
-  schoolGrade: "4th Grade",
-  episodes: "null",
-  appereances: "null",
-  firstAppereance: "Cartman Gets an Anal Probe ",
-};
+// const tolkienBlack = {
+//   name: "Tolkien Black",
+//   nickname: "Tupperware " + "," + " Tupper Mech MK III " + "," + " Blackie " + "," + " Congo ",
+//   image: "svg/Token_Black2.png",
+//   occupation: "Student",
+//   age: "10 years old",
+//   voicedBy: "Trey Parker" + "," + " Adrien Beard",
+//   gender: "Male",
+//   religion: "Roman Catholic",
+//   catchPhrase: "null",
+//   hairColor: "Black",
+//   schoolGrade: "4th Grade",
+//   episodes: "null",
+//   appereances: "null",
+//   firstAppereance: "Cartman Gets an Anal Probe ",
+// };
 
 async function start() {
   console.log("South Park is running!");
 
   const tolkienBlack = await getCharacter("Data/southPark.json");
-  showCharacter(tolkienBlack);
-  showCharacter(tolkienBlack);
-  showCharacter(tolkienBlack);
   showCharacter(tolkienBlack);
 }
 
