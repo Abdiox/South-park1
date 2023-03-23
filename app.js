@@ -8,7 +8,7 @@ const tolkienBlack = {
   image: "svg/Token_Black2.png",
   occupation: "Student",
   age: "10 years old",
-  voicedBy: "Trey Parker " + "," + " Adrien Beard",
+  voicedBy: "Trey Parker" + "," + " Adrien Beard",
   gender: "Male",
   religion: "Roman Catholic",
   catchPhrase: "null",
@@ -19,16 +19,19 @@ const tolkienBlack = {
   firstAppereance: "Cartman Gets an Anal Probe ",
 };
 
-function start() {
+async function start() {
   console.log("South Park is running!");
-  const data = getData();
-  //   showAllCharacters(data);
 
+  const tolkienBlack = await getCharacter("Data/southPark.json");
+  showCharacter(tolkienBlack);
+  showCharacter(tolkienBlack);
+  showCharacter(tolkienBlack);
   showCharacter(tolkienBlack);
 }
 
-function getData() {
-  const data = [];
+async function getCharacter(url) {
+  const response = await fetch(url);
+  const data = await response.json();
   return data;
 }
 
@@ -69,7 +72,7 @@ function showDialog(characters) {
   document.querySelector("#dialog_voicedBy").textContent = characters.voicedBy;
 
   // DIALOG ID:
-  document.querySelector("#dialog").showModal();
+  document.querySelector("#dialog_start").showModal();
 
   //   document.querySelector("#dialog").classList.remove("hidden");
   //   document.querySelector("#btn_close").addEventListener("click", closeDialog);
@@ -130,5 +133,3 @@ function showDialog(characters) {
 // function showAllCharacters(list) {
 //     showCharacter(character);
 // }
-
-// function getDescription() {}
