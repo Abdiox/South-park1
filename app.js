@@ -24,6 +24,9 @@ async function start() {
 
   const tolkienBlack = await getCharacter("https://raw.githubusercontent.com/Abdiox/South-park1/main/Data/southPark.json");
   showCharacter(tolkienBlack);
+
+  const randy = await getCharacter("https://raw.githubusercontent.com/MadsFolkmann/Data-app-kode/main/data/randy.json");
+  showCharacter(randy);
 }
 
 async function getCharacter(url) {
