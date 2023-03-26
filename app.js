@@ -27,6 +27,42 @@ async function start() {
 
   const randy = await getCharacter("https://raw.githubusercontent.com/MadsFolkmann/Data-app-kode/main/data/randy.json");
   showCharacter(randy);
+
+  const leopold = await getCharacter("https://raw.githubusercontent.com/Asbjoernemil/data-assignment/main/data/characters.json");
+  showCharacter(leopold);
+
+  const eric = await getCharacter("https://raw.githubusercontent.com/Bindholt/Data-Projekt/main/data/cartman.json");
+  showCharacter(eric);
+
+  const fosse = await getCharacter("https://raw.githubusercontent.com/frva0001/data/main/data/fosseMcDonald.json");
+  showCharacter(fosse);
+
+  const jimmy = await getCharacter("https://raw.githubusercontent.com/Forkeh/South-Park-App/main/data/jimmy.json");
+  showCharacter(jimmy);
+
+  const barack = await getCharacter("https://raw.githubusercontent.com/AliHMohammad/Data-Ali/main/obamaChar.json");
+  showCharacter(barack);
+
+  const donald = await getCharacter("https://raw.githubusercontent.com/BurimJ/Southpark-Character/main/trump.json");
+  showCharacter(donald);
+
+  const tuong = await getCharacter("https://raw.githubusercontent.com/TheDanishMexican/object-south-park/main/data/app.json");
+  showCharacter(tuong);
+
+  const kyle = await getCharacter("https://raw.githubusercontent.com/fili0727/Data-opgave/main/kyle.json");
+  showCharacter(kyle);
+
+  const towelie = await getCharacter("https://raw.githubusercontent.com/emsc0001/Towelie/main/Data/towelie.json");
+  showCharacter(towelie);
+
+  const paris = await getCharacter("https://raw.githubusercontent.com/Tunafan/southpark_db/main/South%20Park%20db/data/paris.json");
+  showCharacter(paris);
+
+  const jack = await getCharacter("https://raw.githubusercontent.com/YawHB/South_Park_Project/main/data/jack.json");
+  showCharacter(jack);
+
+  const jimbo = await getCharacter("https://raw.githubusercontent.com/Olivermadsenn/Data-afleverin-g/main/data/jimbo.json");
+  showCharacter(jimbo);
 }
 
 async function getCharacter(url) {
