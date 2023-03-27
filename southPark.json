@@ -4,15 +4,15 @@
     "nickname": "Tupperware , Tupper Mech MK III , Blackie , Congo ",
     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Token_Black2.webp/250px-Token_Black2.webp.png",
     "occupation": "Student",
-    "age": "10 years old",
+    "age": 10,
     "voicedBy": "Trey Parker, Adrien Beard",
     "gender": "Male",
     "religion": "Roman Catholic",
     "catchPhrase": "null",
     "hairColor": "Black",
-    "schoolGrade": "4th Grade",
+    "schoolGrade": 4,
     "episodes": "null",
-    "appearances": "null",
+    "appearances": 320,
     "firstAppearance": "Cartman Gets an Anal Probe"
   },
   {
