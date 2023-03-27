@@ -2,23 +2,6 @@
 
 window.addEventListener("load", start);
 
-// const tolkienBlack = {
-//   name: "Tolkien Black",
-//   nickname: "Tupperware " + "," + " Tupper Mech MK III " + "," + " Blackie " + "," + " Congo ",
-//   image: "svg/Token_Black2.png",
-//   occupation: "Student",
-//   age: "10 years old",
-//   voicedBy: "Trey Parker" + "," + " Adrien Beard",
-//   gender: "Male",
-//   religion: "Roman Catholic",
-//   catchPhrase: "null",
-//   hairColor: "Black",
-//   schoolGrade: "4th Grade",
-//   episodes: "null",
-//   appereances: "null",
-//   firstAppereance: "Cartman Gets an Anal Probe ",
-// };
-
 async function start() {
   console.log("South Park is running!");
 
@@ -63,6 +46,33 @@ async function start() {
 
   const jimbo = await getCharacter("https://raw.githubusercontent.com/Olivermadsenn/Data-afleverin-g/main/data/jimbo.json");
   showCharacter(jimbo);
+
+  const scott = await getCharacter("https://raw.githubusercontent.com/luma0001/Data-V1-project/07f6ce395a9b87079df42f68b35483f405eb0c21/scott.json");
+  showCharacter(scott);
+
+  const abraham = await getCharacter("https://raw.githubusercontent.com/Loxiuz/Data_Aflevering/main/data/lincoln.json");
+  showCharacter(abraham);
+
+  const mrMackey = await getCharacter("https://raw.githubusercontent.com/MaxusTheOne/data_project/main/data/mrMackey.json");
+  showCharacter(mrMackey);
+
+  const kenny = await getCharacter("https://raw.githubusercontent.com/Mart0808DK/Data-fetch-projekt/main/kenny.json");
+  showCharacter(kenny);
+
+  const wendy = await getCharacter("https://raw.githubusercontent.com/osman-butt/data-app/main/wendy.json");
+  showCharacter(wendy);
+
+  const kennedy = await getCharacter("https://raw.githubusercontent.com/rarogbennu/SP/master/data/jfk.json");
+  showCharacter(kennedy);
+
+  const tomCruise = await getCharacter("https://raw.githubusercontent.com/svdf18/SPobjects/main/data/tomcruise.json");
+  showCharacter(tomCruise);
+
+  const peter = await getCharacter("https://raw.githubusercontent.com/Kapalee/South-park-project/main/data/pcPrincipal.json");
+  showCharacter(peter);
+
+  const stan = await getCharacter("https://raw.githubusercontent.com/VARattleff/south-park-viktor/main/sp.json");
+  showCharacter(stan);
 }
 
 async function getCharacter(url) {
