@@ -20,7 +20,7 @@ async function getCharacter() {
 function showCharacter(characters) {
   const html = /*html*/ `<article class = "grid-item">
   <img src=${characters.image}>
-  <p>${characters.name}</p>
+  <h3>${characters.name}</h3>
     <p>${characters.occupation}</p>
   </article>
 `;
