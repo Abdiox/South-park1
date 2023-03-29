@@ -8,14 +8,23 @@ async function start() {
   const characters = await getCharacter();
 
   characters.forEach(showCharacter);
+  southPark.sort(compareDexIndex);
+
+  console.log(southPark);
+
+  southPark.sort(compareNames);
+  console.log(southPark);
 }
 
+// Fetch JSON filen
 async function getCharacter() {
   const response = await fetch("southPark.json");
   const data = await response.json();
   console.log(data);
   return data;
 }
+
+//Registrering af klik og indsætning i HTML
 
 function showCharacter(characters) {
   const html = /*html*/ `<article class = "grid-item">
@@ -31,6 +40,7 @@ function showCharacter(characters) {
   }
 }
 
+// Visning af elementer
 function showDialog(characters) {
   //Main
   console.log(characters);
@@ -59,6 +69,15 @@ function showDialog(characters) {
 
   //   document.querySelector("#dialog").classList.remove("hidden");
   //   document.querySelector("#btn_close").addEventListener("click", closeDialog);
+}
+
+// Sortering af array
+function compareDexIndex(southparkA, southparkB) {
+  return SouthparkA.dexIndex - SouthparkB.dexIndex;
+}
+
+function compareNames(southparkA, southparkB) {
+  return southparkA.name.localCompare(southparkB.name);
 }
 
 // function closeDialog() {
