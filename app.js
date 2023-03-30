@@ -61,8 +61,8 @@ function showDialog(characters) {
   // DIALOG ID:
   document.querySelector("#dialog_start").showModal();
 
-  //   document.querySelector("#dialog").classList.remove("hidden");
-  //   document.querySelector("#btn_close").addEventListener("click", closeDialog);
+  // document.querySelector("#dialog").classList.remove("hidden");
+  // document.querySelector("#btn_close").addEventListener("click", closeDialog);
 }
 
 // Sortering af array
@@ -77,6 +77,7 @@ function showDialog(characters) {
 // function closeDialog() {
 //   document.querySelector("#btn_close").addEventListener("click", closeDialog);
 //   document.querySelector("#dialog").classList.add("hidden");
+//   console.log(close);
 // }
 
 // SHOW CHARACTER FUNKTIONEN //
