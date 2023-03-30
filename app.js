@@ -5,58 +5,65 @@ window.addEventListener("load", start);
 async function start() {
   console.log("South Park is running!");
 
-  const characters = await getCharacter();
+  const allCharacters = await getCharacters("https://cederdorff.github.io/dat-js/05-data/southpark.json");
+  showAllCharacters(allCharacters);
 
   characters.forEach(showCharacter);
 }
 
 // Fetch JSON filen
-async function getCharacter() {
-  const response = await fetch("southPark.json");
+async function getCharacters(url) {
+  const response = await fetch(url);
   const data = await response.json();
   console.log(data);
   return data;
 }
 
+function showAllCharacters(characterList) {
+  for (const character of characterList) {
+    showCharacter(character);
+  }
+}
+
 //Registrering af klik og indsætning i HTML
 
-function showCharacter(characters) {
+function showCharacter(character) {
   const html = /*html*/ `<article class = "grid-item">
-  <img src=${characters.image}>
-  <h3>${characters.name}</h3>
-    <p>${characters.occupation}</p>
+  <img src=${character.image}>
+  <h3>${character.name}</h3>
+    <p>${character.occupation}</p>
   </article>
 `;
   document.querySelector("#characters").insertAdjacentHTML("beforeend", html);
   document.querySelector("#characters article:last-child").addEventListener("click", characterCliked);
   function characterCliked() {
-    showDialog(characters);
+    showDialog(character);
   }
 }
 
 // Visning af elementer
-function showDialog(characters) {
+function showDialog(character) {
   //Main
-  console.log(characters);
-  document.querySelector("#dialog_image").src = characters.image;
-  document.querySelector("#dialog_title").textContent = characters.name;
-  document.querySelector("#dialog_age").textContent = characters.age;
-  document.querySelector("#dialog_occupation").textContent = characters.occupation;
+  console.log(character);
+  document.querySelector("#dialog_image").src = character.image;
+  document.querySelector("#dialog_title").textContent = character.name;
+  document.querySelector("#dialog_age").textContent = character.age;
+  document.querySelector("#dialog_occupation").textContent = character.occupation;
 
   //Rest
-  document.querySelector("#dialog_nickname").textContent = characters.nickname;
-  document.querySelector("#dialog_gender").textContent = characters.gender;
-  document.querySelector("#dialog_religion").textContent = characters.religion;
-  document.querySelector("#dialog_catchPhrase").textContent = characters.catchPhrase;
-  document.querySelector("#dialog_hairColor").textContent = characters.hairColor;
-  document.querySelector("#dialog_schoolGrade").textContent = characters.schoolGrade;
-  document.querySelector("#dialog_episodes").textContent = characters.episodes;
-  document.querySelector("#dialog_appearances").textContent = characters.appearances;
-  document.querySelector("#dialog_firstAppearance").textContent = characters.firstAppearance;
+  document.querySelector("#dialog_nickname").textContent = character.nickname;
+  document.querySelector("#dialog_gender").textContent = character.gender;
+  document.querySelector("#dialog_religion").textContent = character.religion;
+  document.querySelector("#dialog_catchPhrase").textContent = character.catchPhrase;
+  document.querySelector("#dialog_hairColor").textContent = character.hairColor;
+  document.querySelector("#dialog_schoolGrade").textContent = character.schoolGrade;
+  document.querySelector("#dialog_episodes").textContent = character.episodes;
+  document.querySelector("#dialog_appearances").textContent = character.appearances;
+  document.querySelector("#dialog_firstAppearance").textContent = character.firstAppearance;
 
   //Bottom
-  document.querySelector("#dialog_name").textContent = characters.name;
-  document.querySelector("#dialog_voicedBy").textContent = characters.voicedBy;
+  document.querySelector("#dialog_name").textContent = character.name;
+  document.querySelector("#dialog_voicedBy").textContent = character.voicedBy;
 
   // DIALOG ID:
   document.querySelector("#dialog_start").showModal();
@@ -74,11 +81,7 @@ function showDialog(characters) {
 //   return southparkA.name.localCompare(southparkB.name);
 // }
 
-// function closeDialog() {
-//   document.querySelector("#btn_close").addEventListener("click", closeDialog);
-//   document.querySelector("#dialog").classList.add("hidden");
-//   console.log(close);
-// }
+//
 
 // SHOW CHARACTER FUNKTIONEN //
 
