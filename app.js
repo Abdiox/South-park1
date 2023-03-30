@@ -8,12 +8,6 @@ async function start() {
   const characters = await getCharacter();
 
   characters.forEach(showCharacter);
-  southPark.sort(compareDexIndex);
-
-  console.log(southPark);
-
-  southPark.sort(compareNames);
-  console.log(southPark);
 }
 
 // Fetch JSON filen
@@ -72,13 +66,13 @@ function showDialog(characters) {
 }
 
 // Sortering af array
-function compareDexIndex(southparkA, southparkB) {
-  return SouthparkA.dexIndex - SouthparkB.dexIndex;
-}
+// function compareDexIndex(southparkA, southparkB) {
+//   return SouthparkA.dexIndex - SouthparkB.dexIndex;
+// }
 
-function compareNames(southparkA, southparkB) {
-  return southparkA.name.localCompare(southparkB.name);
-}
+// function compareNames(southparkA, southparkB) {
+//   return southparkA.name.localCompare(southparkB.name);
+// }
 
 // function closeDialog() {
 //   document.querySelector("#btn_close").addEventListener("click", closeDialog);

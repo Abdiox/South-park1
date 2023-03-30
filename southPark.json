@@ -50,7 +50,7 @@
   {
     "name": "Heather Swanson",
     "nickname": "Blade Jaggart",
-    "image": "picture/Heather_Swanson.webp",
+    "image": "https://static.wikia.nocookie.net/southpark/images/9/9a/Heather_Swanson.png/revision/latest/scale-to-width-down/295?cb=20191114174421",
     "occupation": "Athlete",
     "age": null,
     "voicedBy": "Trey Parker",
@@ -303,7 +303,7 @@
   {
     "name": "Jimbo Kern",
     "nickname": "Jimbo",
-    "image": "Jimboooooooo.webp",
+    "image": "https://static.wikia.nocookie.net/southpark/images/d/d2/JimboKernBestImage.png/revision/latest?cb=20220410025619",
     "occupation": "Hunter, Gun Shop Owner, Little League Umpire, Television Show Host",
     "age": 51,
     "voicedBy": "Matt Stone",
@@ -443,5 +443,21 @@
     "episodes": "S08E12, S11E13, S12E02, S14E05, S14E06",
     "appearances": 5,
     "firstAppearance": "S08E12"
+  },
+  {
+    "name": "Towelie",
+    "nickname": "The Towel, McTowelie, Towelyey",
+    "image": "https://static.wikia.nocookie.net/southpark/images/0/07/Towelie-0.png",
+    "occupation": "drug addict, relationship",
+    "age": 17,
+    "voicedBy": "Vernon Chatman",
+    "gender": "male",
+    "religion": "atheist",
+    "catchPhrase": "Dont forget to bring the towell, You wanna get high, That some good shit",
+    "hairColor": "blue",
+    "schoolGrade": "null",
+    "episodes": "S05E08, S10E14, S14E15",
+    "appearances": 3,
+    "firstAppearance": "S05E08"
   }
 ]
