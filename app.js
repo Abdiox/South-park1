@@ -7,8 +7,6 @@ async function start() {
 
   const allCharacters = await getCharacters("https://cederdorff.github.io/dat-js/05-data/southpark.json");
   showAllCharacters(allCharacters);
-
-  characters.forEach(showCharacter);
 }
 
 // Fetch JSON filen

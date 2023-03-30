@@ -29,15 +29,28 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.1px;
   text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 h2 {
   font-weight: 500;
   letter-spacing: 0.1px;
+  text-align: center;
 }
 
 h3 {
   font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+ul {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 0.1px;
 }
 
@@ -65,12 +78,15 @@ footer {
   background-color: var(--green);
   color: var(--text-color-light);
   padding: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
   text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /* ---------- main page styling ---------- */
 main {
-  animation: fadeIn 0.4s;
+  animation: fadeIn 0.7s;
   padding: 137px 0 0;
 }
 
@@ -217,3 +233,5 @@ dialog ul {
 dialog p {
   margin: 0.5em 0 1em;
 }
+
+/* ---------- ANIMATION ---------- */
