@@ -39,7 +39,7 @@ function showCharacter(character) {
   }
 }
 
-// Visning af elementer
+// Visning af characters
 function showDialog(character) {
   //Main
   console.log(character);
@@ -65,39 +65,7 @@ function showDialog(character) {
 
   // DIALOG ID:
   document.querySelector("#dialog_start").showModal();
-
-  // document.querySelector("#dialog").classList.remove("hidden");
-  // document.querySelector("#btn_close").addEventListener("click", closeDialog);
 }
-
-// Sortering af array
-// function compareDexIndex(southparkA, southparkB) {
-//   return SouthparkA.dexIndex - SouthparkB.dexIndex;
-// }
-
-// function compareNames(southparkA, southparkB) {
-//   return southparkA.name.localCompare(southparkB.name);
-// }
-
-//
-
-// SHOW CHARACTER FUNKTIONEN //
-
-// function showCharacter(character) {
-//   document.querySelector("#name").textContent = character.name;
-//   document.querySelector("#nickname").textContent = character.nickname;
-//   document.querySelector("#image").textContent = character.image;
-//   document.querySelector("#occupation").textContent = character.occupation;
-//   document.querySelector("#voicedBy").textContent = character.voicedBy;
-//   document.querySelector("#gender").textContent = character.gender;
-//   document.querySelector("#religion").textContent = character.religion;
-//   document.querySelector("#catchPhrase").textContent = character.catchPhrase;
-//   document.querySelector("#hairColor").textContent = character.hairColor;
-//   document.querySelector("#schoolGrade").textContent = character.schoolGrade;
-//   document.querySelector("#episodes").textContent = character.episodes;
-//   document.querySelector("#appereances").textContent = character.appereances;
-//   document.querySelector("#firstAppereance").textContent = character.firstAppereance;
-// }
 
 // ADD CHARACTER FUNKTIONEN //
 
@@ -125,9 +93,3 @@ function showDialog(character) {
 //   list.insertAdjacentHTML("beforeend", html);
 // }
 // addCharacter(tolkienBlack);
-
-// EN MÅDE AT SÆTTE FUNKTIONERNE PÅ //
-
-// function showAllCharacters(list) {
-//     showCharacter(character);
-// }
